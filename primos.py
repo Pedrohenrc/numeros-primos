@@ -6,6 +6,7 @@ if n in (0, 1):
         sys.exit()
 if n == 2:
     print(f'Não há nenhum número primo entre 0 e {n}')
+        sys.exit()
 def primo(n):
     if n < 2:
         return False
