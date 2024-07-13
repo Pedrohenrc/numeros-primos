@@ -1,12 +1,16 @@
 import math
-import sys
-n = int(input("insira o numero maior que 1:"))
-if n in (0, 1):
-        print('Entrada inválida.')
-        sys.exit()
-if n == 2:
-    print(f'Não há nenhum número primo entre 0 e {n}')
-    sys.exit()
+def checar(p):
+        while True:
+                try:
+                    numero = int(input("Por favor, insira um número maior que 1: "))
+                    if numero > 1:
+                        return numero
+                    else:
+                        print("Erro: o número deve ser maior que 1. Tente novamente.")
+                except ValueError:
+                    print("Entrada inválida. insira outro número.")
+p = 1
+n = checar(p)
 def primo(n):
     if n < 2:
         return False
@@ -21,7 +25,7 @@ def primo(n):
 
 def numerosp(n):
     listap = []
-    for x in range (1, n):
+    for x in range (1,(n + 1):
         if primo(x):
             listap += [x]
     return listap
