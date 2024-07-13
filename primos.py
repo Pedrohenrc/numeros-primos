@@ -12,8 +12,6 @@ def checar(p):
 p = 1
 n = checar(p)
 def primo(n):
-    if n < 2:
-        return False
     if n == 2 or n == 3:
         return True
     if n % 2 == 0 or n % 3 == 0:
