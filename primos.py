@@ -1,8 +1,11 @@
-
 import math
-n = int(input("insira o numero:"))
-if n in (0, 1, 2):
-        print(f'não há nenhum número primo entre 0 e {n}')
+import sys
+n = int(input("insira o numero maior que 1:"))
+if n in (0, 1):
+        print('Entrada inválida.')
+        sys.exit()
+if n == 2:
+    print(f'Não há nenhum número primo entre 0 e {n}')
 def primo(n):
     if n < 2:
         return False
